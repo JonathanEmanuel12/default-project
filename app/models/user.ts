@@ -21,9 +21,6 @@ export default class User extends compose(UuidBase, AuthFinder) {
     @column()
     declare password: string
 
-    @column()
-    declare addressId: number
-
     @column.dateTime({ autoCreate: true })
     declare createdAt: DateTime
 
